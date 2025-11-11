@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "pinia": "^3.0.3",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.16"
+  }
+}
