@@ -40,18 +40,40 @@
       </div>
     </header>
 
-    <!-- Login-Karte -->
+    <!-- Registrieren-Karte -->
     <div class="flex flex-grow items-center justify-center">
       <div
-        class="rounded-3xl px-12 pt-8 pb-12 w-full max-w-lg text-white animate-fadeIn flex flex-col justify-start items-center shadow-xl mt-12"
-        style="background-color: rgba(0, 0, 0, 0.25); height: 60vh;"
-      >
+  class="rounded-3xl px-8 pt-6 pb-8 w-full max-w-md text-white animate-fadeIn flex flex-col justify-start items-center shadow-xl mt-12"
+  style="background-color: rgba(0, 0, 0, 0.25);"
+>
+
+      
         <!-- Titel -->
         <h2
           class="text-lg md:text-xl font-semibold mb-8 text-center text-black drop-shadow-md"
         >
-          Anmelden
+          Registrieren
         </h2>
+
+        <!-- Vorname Feld -->
+        <div class="w-full mb-4">
+          <input
+            type="text"
+            placeholder="Vorname *"
+            required
+            class="w-full px-4 py-3 rounded-xl bg-white/80 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#98C73C] transition-all duration-200"
+          />
+        </div>
+
+        <!-- Nachname Feld -->
+        <div class="w-full mb-4">
+          <input
+            type="text"
+            placeholder="Nachname *"
+            required
+            class="w-full px-4 py-3 rounded-xl bg-white/80 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-[#98C73C] transition-all duration-200"
+          />
+        </div>
 
         <!-- E-Mail Feld -->
         <div class="w-full mb-4">
@@ -85,16 +107,10 @@
           class="w-full py-3 rounded-xl text-black font-semibold text-lg shadow-md transition-all duration-300 hover:brightness-110"
           style="background-color: #98C73C;"
         >
-          Anmelden
+          Registrieren
         </button>
 
-        <!-- Passwort vergessen -->
-        <router-link
-          to="/forgot-password"
-          class="mt-4 text-sm text-black hover:text-[#98C73C] transition-colors"
-        >
-          Passwort vergessen?
-        </router-link>
+        
 
         <!-- Divider ODER -->
         <div class="flex items-center w-full my-6">
@@ -103,14 +119,14 @@
           <div class="flex-grow h-[2px] bg-gray-400/60"></div>
         </div>
 
-        <!-- Registrieren -->
+        <!-- Login -->
         <p class="text-sm text-black">
-          Noch kein Konto?
+          Hast du ein Konto?
           <router-link
-            to="/register"
+            to="/login"
             class="font-semibold hover:text-[#98C73C] transition-colors"
           >
-            Registrieren
+            Anmelden
           </router-link>
         </p>
       </div>
