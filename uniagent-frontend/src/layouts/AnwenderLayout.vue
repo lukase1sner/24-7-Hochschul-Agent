@@ -19,7 +19,7 @@
         </span>
       </div>
 
-      <h1 class="app-title">QuizApp</h1>
+      <h1 class="app-title">UNIAGENT🎓</h1>
 
       <span
         class="material-symbols-outlined logout-icon"
@@ -107,7 +107,8 @@
 <script setup>
 import { ref, computed, watch } from "vue";
 import { useRoute } from "vue-router";
-import "../styles/Dashboard.css";
+// use the layout CSS (adjusted from Dashboard.css)
+import "../styles/AnwenderLayout.css";
 
 const desktopCollapsed = ref(false);
 const mobileOpen = ref(false);
@@ -122,10 +123,10 @@ const headerTooltip = ref({
 
 const route = useRoute();
 
+// close sidebar on route change
 watch(
   () => route.fullPath,
   () => {
-    // Wenn sich die Route ändert, Sidebar schließen
     mobileOpen.value = false;
   }
 );
@@ -165,8 +166,16 @@ const rootClass = computed(
 
 const menuItems = [
   { to: "/administrator/dashboard", icon: "team_dashboard", label: "Dashboard" },
-  { to: "/administrator/benutzeranlegen", icon: "add_2", label: "Benutzer anlegen" },
-  { to: "/administrator/benutzerverwaltung", icon: "database", label: "Benutzerverwaltung" },
+  {
+    to: "/administrator/benutzeranlegen",
+    icon: "add_2",
+    label: "Benutzer anlegen",
+  },
+  {
+    to: "/administrator/benutzerverwaltung",
+    icon: "database",
+    label: "Benutzerverwaltung",
+  },
 ];
 
 const handleLogout = () => {

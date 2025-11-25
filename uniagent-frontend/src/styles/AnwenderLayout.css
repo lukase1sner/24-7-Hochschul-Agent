@@ -29,7 +29,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  background-color: #111218;
+  background-color: #98C73C;
   padding: 0.8rem 1.5rem;
   height: 60px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -46,7 +46,7 @@
 
 .desktop-toggle-icon {
   font-size: 2rem;
-  color: #fff;
+  color: #000;
   cursor: pointer;
   transition: color 0.2s;
 }
@@ -69,7 +69,7 @@
 .app-title {
   font-size: 1.3rem;
   font-weight: 600;
-  color: #00e0ff;
+  color: #000000;
   margin: 0 auto;
   text-align: center;
   position: absolute;
@@ -83,7 +83,7 @@
   right: 1.5rem;
   font-size: 2rem;
   cursor: pointer;
-  color: #ffffff;
+  color: #000000;
   transition: color 0.2s;
 }
 
@@ -131,6 +131,7 @@
   flex: 1;
   overflow-y: auto;
   scrollbar-width: none;
+  background-color: rgb(77, 128, 0, 0.15);
 }
 
 .sidebar-nav::-webkit-scrollbar {
@@ -239,7 +240,7 @@
 /* === MAIN CONTENT === */
 .main-content {
   flex-grow: 1; /* Nimmt den verfügbaren Platz ein */
-  background-color: #0e0e12;
+  background-color: #ffffff;
   padding: 2rem;
   overflow-y: auto; /* Ermöglicht das Scrollen, wenn der Inhalt größer als der Viewport wird */
 }
@@ -251,8 +252,8 @@
 
 /* === FOOTER === */
 .footer {
-  background-color: #111218;
-  color: #bdbdbd;
+  background-color: #98C73C;
+  color: #000000;
   text-align: center;
   font-size: 0.85rem;
   padding: 0.8rem;
@@ -313,7 +314,10 @@
   .sidebar-nav {
     align-items: center;
     margin-top: 3rem;
+
+    
   }
+  
 
   .sidebar-link {
     width: 80%;
@@ -333,22 +337,6 @@
     left: 50%;
     transform: translateX(-50%);
   }
-
-  /* --- Karten untereinander (Tablet und kleiner) --- */
-  .dashboard-anwender-cards {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 Karte pro Zeile */
-    gap: 1.5rem;
-    padding-left: 16px;
-    padding-right: 16px;
-    width: 100%;
-  }
-
-  .dashboard-anwender-card {
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
 }
 
 /* --- Desktop (ab 1024px) --- */
@@ -365,6 +353,9 @@
     width: 100%;
     max-width: none;
     margin: 0;
+  }
+  .dashboard-admin-title {
+    color: #000000;
   }
 }
 
